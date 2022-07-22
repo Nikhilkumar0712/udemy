@@ -1,14 +1,12 @@
 import React from 'react'
-const Comp1 = (props) => {
+import Comp2 from './Comp2'
 
+const Comp1 = (props) => {
+  
   return (
     <div>
       <h1>{props.title}</h1>
-      <h2>{props.name}</h2>
-        
-      <div>
-    
-      </div>
+      <Comp2 title ={props.title}/>
     </div>
   )
 }
