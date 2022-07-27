@@ -1,9 +1,10 @@
 import React from 'react'
 
 const Comp2 = (props) => {
+  const month =props.date.toLocaleString('en-us', {month : "long"})
   return (
     <div>
-      <h1>{props.title}</h1>
+      {month}
     </div>
   )
 }
